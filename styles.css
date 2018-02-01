@@ -27,12 +27,14 @@ body {
     margin:0;
     padding:0;
     position:absolute;
+
 }
 
 .header li {
     display:inline-block;
     float: left;
     margin-right:10px;
+    z-index: 1000;
 }
 
 
@@ -74,6 +76,7 @@ body {
 .header li ul li {
     display: block ;
     float: none;
+    z-index: 1000;
 }
 
 .header ul li a:hover + .hidden, .hidden:hover {
@@ -82,6 +85,7 @@ body {
 
 .banner {
     position: relative;
+    z-index: 3000;
     text-align: center;
     color:#e5b121;
     font-size:  150px;
@@ -136,6 +140,10 @@ body {
     text-decoration: none;
 }
 
+a:hover {
+    background: #e5b121;
+}
+
 .footer {
     grid-area: footer;
     text-align: center;
@@ -146,3 +154,8 @@ h2 {
     color: #e5b121;
 }
 
+.box {
+    width: 300px;
+    height: 30px;
+    display: block;
+}
